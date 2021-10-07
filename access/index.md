@@ -47,7 +47,7 @@ research falls within EPSRC remit or not.
 |-
 | [Grant Access](grant.html) | Always Open | Always Open | | [Grant/RAP Access TA Form (Word)](ta/Cirrus-TA-RAPGrant-form.docx) |
 |-
-| [Access to HPC](access-to-hpc.html) | 30 April 2021 16:00 | 2 April 2021 16:00 |  [EPSRC Call details](https://www.ukri.org/opportunity/access-to-high-performance-computing/) EPSRC remit only. ARCHER2 or Tier-2 computing resource for a maximum duration of one year. | [Access to HPC Tier2 TA Form](https://epsrc.ukri.org/files/funding/calls/2020/access-to-hpc-tier-2-technical-assessment/)  |
+| [Access to HPC](access-to-hpc.html) | 15 December 2021 16:00 UK time	 | 17 November 2021 16:00  |  [EPSRC Call details](https://www.ukri.org/opportunity/access-to-high-performance-computing/) EPSRC remit only. ARCHER2 or Tier-2 computing resource for a maximum duration of one year. | [Access to HPC Tier2 TA Form](https://epsrc.ukri.org/files/funding/calls/2020/access-to-hpc-tier-2-technical-assessment/)  |
 |-
 | [Cirrus Driving Test](driving-test.html) | Always Open |  | [Details](driving-test.html) | |
 |-
