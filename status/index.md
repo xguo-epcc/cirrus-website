@@ -28,9 +28,9 @@ No recent issues
 
 ### Wednesday 8th September 
 #### Modules Deletions
+
 As part of our regular maintenance of the Cirrus Service, we would like to remove outdated, broken or unused modules.
 | Module |  | 
-|-
 | ansys/17.2 | Please use later version | 
 |-
 | ansys/19.2 | Please use later version | 
