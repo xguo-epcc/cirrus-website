@@ -29,8 +29,6 @@ No recent issues
 ### Wednesday 8th September 
 #### Modules Deletions
 As part of our regular maintenance of the Cirrus Service, we would like to remove outdated, broken or unused modules.
-
-
 |-
 | Module |  | 
 |-
