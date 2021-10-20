@@ -50,7 +50,7 @@ No recent issues
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
 | Planned | At-Risk | 27/10/21 0900 | 27/10/21 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
-
+| Planned | Outage | 03/11/21 0900 | 03/11/21 1700 | Cirrus | Full system unavailable during maintenance session. | Third-party maintenance on cooling system. |
 
 
 ### Wednesday 8th September 
