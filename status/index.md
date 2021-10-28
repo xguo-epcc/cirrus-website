@@ -55,52 +55,9 @@ No recent issues
 
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Planned | At-Risk | 27/10/21 0900 | 27/10/21 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
-| Planned | Outage | 03/11/21 0900 | 03/11/21 1700 | Cirrus | Full system unavailable during maintenance session. | Third-party maintenance on cooling system. |
+| Planned | Outage | 03/11/21 0900 | 03/11/21 1700 | Cirrus | Full system will be unavailable during maintenance session. | Third-party maintenance on cooling system. |
+| Completed | At-Risk | 27/10/21 0900 | 27/10/21 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
 
-
-### Wednesday 8th September 
-#### Modules Deletions
-
-
-As part of our regular maintenance of the Cirrus Service, we would like to remove outdated, broken or unused modules.
-
-| Module |  | 
-| ---    | ---  | 
-| ansys/17.2 |Please use later version |  
-| ansys/19.2 | Please use later version | 
-| ansys/2020R1 | Please use later version | 
-| Intel 19.0.0.117 | Please use intel-19.5 or later. | 
-| matlab/R2018a	|  Please use later version |
-| nvidia/cuda-10.1 | Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| nvidia/cuda-10.2	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions. |
-| nvidia/cuda-11.0	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| nvidia/mathlibs-10.1	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| nvidia/mathlibs-10.2	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| nvidia/compilers-20.9	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| nvidia-compilers-mpi-20.9	| Please use the latest NVIDIA HPC SDK. See "module avail nvidia/nvhpc" for current versions.|
-| openmpi/4.0.3	      | Please use openmpi/4.1.0 |
-| openmpi/4.0.3-gcc8	| Please use openmpi/4.1.0 |
-| openmpi/4.0.5-ucx	| Please use openmpi/4.1.0 |
-| openmpi/4.1.0-cuda	| Please use openmpi/4.1.0-cuda-11.2 |
-| openmpi/4.1.0-cuda-10.1	| Please use openmpi/4.1.0-cuda-11.2 |
-| openmpi/4.1.0-cuda-10.2	| Please use openmpi/4.1.0-cuda-11.2 |
-| openmpi/4.1.0-ucx-gcc8	| Please use openmpi/4.1.0 |
-| R/3.4.0	| Please use later version |
-| singularity/3.6.1	| Please use singularity/3.7.2 (`--with-setuid` install) |
-| singularity/3.7.0	| Please use singularity/3.7.2 (`--with-setuid` install) |
-| singularity/3.7.1	| Please use singularity/3.7.2 (`--with-setuid` install) |
-| miniconda3/4.9.2-py38    | Please use miniconda3/4.9.2-gpu |
-| miniconda3/4.9.2-py38-torch    | Please use miniconda3/4.9.2-gpu-torch |
-| miniconda3/4.9.2-py38-tensorflow    | Please use miniconda3/4.9.2-gpu-tensorflow |
-
-Please get in touch by Wednesday 1st September if you have an issue with any module being removed.
-<!--There are regular 'At-Risk' maintenance sessions on Wednesdays from 1000-1200. -->
-
-## Completed Maintenance Sessions
-### Wednesday 18th August 
-
-The networking maintenance has now been completed successfully at the Advanced Computing Facility (ACF). 
 
 ## At Risk Maintenance Sessions
 
