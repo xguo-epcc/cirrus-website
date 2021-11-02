@@ -38,16 +38,9 @@ is used to support small, short jobs with fast turnaround time.
 
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Ongoing | Issue | 2021-10-28 1130  | tbc | Cirrus | Some external connections are unavailable such as git pull, pushes, licence servers | Network changes at the ACF have caused issues. The University network team are working to resolve these. |   
+| Resolved | Issue | 2021-10-28 1130  | 2021-10-28 1600| Cirrus | Some external connections are unavailable such as git pull, pushes, licence servers | Network changes at the ACF have caused issues. The University network team have resolved the issues. |   
 | Ongoing | Issue | 2021-07-01 0900 | tbc | Object Store (WoS) | The WoS is currently unavailable. | We are working withthe vendor to restore the WoS to service again. |   
 
-### Current Issues
-
-No Current Issues
-
-### Recent Issues
-
-No recent issues
 
 ## Service Calendar and Maintenance
 
