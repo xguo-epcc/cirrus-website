@@ -34,11 +34,18 @@ title="Cirrus Node Status over time"}
 Note: the long running reservation visible in the plot corresponds to the *short* QoS which
 is used to support small, short jobs with fast turnaround time.
 
-## Known Issues
+## Service Alerts
 
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Resolved | Issue | 2021-10-28 1130  | 2021-10-28 1600| Cirrus | Some external connections are unavailable such as git pull, pushes, licence servers | Network changes at the ACF have caused issues. The University network team have resolved the issues. |   
+| Ongoing | Issue | 2021-11-05 0800  | | Cirrus: CPU compute nodes | A small number of CPU compute nodes are unavailable to run jobs | A power incident in the Edinburgh area has caused a number of CPU compute nodes to lose power. |   
+| Ongoing | Issue | 2021-07-01 0900 | tbc | Object Store (WoS) | The WoS is currently unavailable. | We are working with the hardware vendor to restore the WoS to service again. |   
+
+### Recently Resolved Service Alerts
+
+| Status | Type | Start | End | System | User Impact | Reason |
+| ---    | ---  | ---   | --- | ---    | ---         | ---    |
+| Resolved | Issue | 2021-10-28 1130  | 2021-10-28 1600 | Cirrus | Some external connections are unavailable such as git pull, pushes, licence servers | Network changes at the ACF have caused issues. The University network team have resolved the issues. |   
 | Ongoing | Issue | 2021-07-01 0900 | tbc | Object Store (WoS) | The WoS is currently unavailable. | We are working withthe vendor to restore the WoS to service again. |   
 
 
