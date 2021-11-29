@@ -37,7 +37,7 @@ is used to support small, short jobs with fast turnaround time.
 
 ## Known Issues 
 
-We are experiening a heavy load on the metadata server. Our systems team are investigating but we suspect this is due to user(s) performing many i/o operations. We apologise for the inconvenience this is causing users. 
+We are experiening a heavy load on the metadata server. Our systems team are investigating but we suspect this is due to user(s) performing many I/O operations. We apologise for the inconvenience this is causing users. 
 
 ## Service Alerts
 
