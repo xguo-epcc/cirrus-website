@@ -63,6 +63,26 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 | Completed | At-Risk | 2021-10-27 0900 | 2021-10-27 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
 
 
+
+## Regular Module Updates 
+
+| Description | Reason | Advice |
+| ---    | ---  | ---   | 
+| Default git loaded at login to be updated to 2.27 | There should be no adverse consequences for git users | 2.21 will still be available as a non-default version |
+| Remove starccm+/12.04 | Outdated | Please Use a later version |
+
+Remove starccm+/12.04	Outdated	Please use a later version
+Remove starccm+/12.04.011-R8	Outdated	Please use a later version
+Remove starccm+/13.06.012	"	"
+Remove starccm+/13.06.012-R8	"	"
+Remove starccm+/14.04.013-R8	"	"
+Remove starccm_/14.06.013-R8	Outdated	Please use a later version
+Remove gnu-parallel/20170322-gcc6	Outdated	Use later version
+Remove matlab/R2018b	Outdated	Please use a later version
+Remove flacs/10.9.1	Outdated	Please use a later version
+Remove strace/2.2.0	Old	Use default strace/5.8
+
+
 ## At Risk Maintenance Sessions
 
 There is an 'At-Risk' Session provisionally booked every Wednesday from 1000 - 1200. 
