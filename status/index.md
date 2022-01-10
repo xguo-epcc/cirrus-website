@@ -43,6 +43,7 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
+| Ongoing | Issue | 2022-01-10 | tbc | Cirrus, SAFE | Outgoing network access from Cirrus to external sites is not currently working. SAFE response is slow or degraded. | DNS issue at the University of Edinburgh |
 | Ongoing | Issue | 2021-07-01 0900 | tbc | Object Store (WoS) | The WoS is currently unavailable. | We are working with the hardware vendor to restore the WoS to service again. |   
 
 ### Recently Resolved Service Alerts
@@ -62,11 +63,9 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 | Planned | Outage | 2021-12-01  0900 | 2021-12-01 1700 | Cirrus | Full system will be unavailable during maintenance session. | Third-party maintenance on cooling system. |
 | Completed | At-Risk | 2021-10-27 0900 | 2021-10-27 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
 
-
-
 ## Regular Module Updates 
 
-We will be updating modules on cirrus as detailed below. The modules will be updated or removed on Wednesday 15th December so please contact us if you expect this to cause any issues, support@cirrus.ac.uk.
+On Wed 15 Dec 2021 we updating modules on Cirrus as detailed below.
   
 | Description | Reason | Advice |
 | ---    | ---  | ---   | 
