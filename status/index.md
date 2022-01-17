@@ -56,6 +56,13 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 
 ## Service Calendar and Maintenance
 
+## Maintenance Sessions:Quarter 1 2022 (1st January - 31st March 2022)
+
+| Status | Type | Start | End | System | User Impact | Reason |
+| ---    | ---  | ---   | --- | ---    | ---         | ---    |
+| Planned | Full Maintenance | 2022-02-21  0900 | 2022-02-11 1700 | Cirrus | There will be a full rebuild of the Cirrus Service. It will be unavailable during maintenance session. | Attach new storage storage, bring the system software up to date. |
+
+
 ## Maintenance Sessions:Quarter 4 2021 (1st Oct - 31st December 2021)
 
 | Status | Type | Start | End | System | User Impact | Reason |
