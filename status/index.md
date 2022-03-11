@@ -12,10 +12,17 @@ summary: Up to date status of the Cirrus service
 - [Recent Issues](#recent-issues)
 - [Service Calendar and Maintenance](#service-calendar-and-maintenance)
 
+## Friday 11th March: Cirrus Upgrade Status and Delayed Return to Service
+
+Unfortunately, there was a delayed start to the upgrade process due to hardware issues on Cirrus. The hardware issues have been resolved and the teams have been making good progress with the Cirrus upgrade. The cluster management software has been upgraded and the operating system on the login and compute nodes has also been upgraded. The EPCC systems team are now making our local customisations to Cirrus in parallel to final work by HPE. The Computational Science and Engineering (CSE) team are also testing the programming environment and will rebuild any application software where needed.
+
+The new CEPH storage is now attached to Cirrus and further details of the new storage arrangements will be sent via a user mailing and will be fully documented on the Cirrus website.
+
+Given the delayed start to the upgrade process, we are not able to reopen the service on Monday 14th March as previously advertised. We will send a further user mailing on Wednesday 16th March where we hope to confirm the return to service time and do apologise for the delay in return to service.
 
 ## Cirrus Upgrade: Monday 21st February - Monday 14th March 
  
- The Cirrus Service will be upgraded from Monday 21st February - Monday 14th March but users will be notified if we are able to return the system earlier. During this time, the Cirrus Service will be unavailable. This means that users will not be able to connect to the Cirrus login nodes, run jobs or access any data stored on Cirrus. Any jobs that are in the batch system queue will be removed.
+The Cirrus Service will be upgraded from Monday 21st February - Monday 14th March but users will be notified if we are able to return the system earlier. During this time, the Cirrus Service will be unavailable. This means that users will not be able to connect to the Cirrus login nodes, run jobs or access any data stored on Cirrus. Any jobs that are in the batch system queue will be removed.
 
 There will be new storage arrangements when the system is returned to users and these will be detailed in further user messages before the system is returned alongside updated documentation.
 
@@ -67,7 +74,7 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 
 | Status | Type | Start | End | System | User Impact | Reason |
 | ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Planned | Full Maintenance | 2022-02-21  0900 | 2022-03-11 1700 | Cirrus | There will be a full rebuild of the Cirrus Service. It will be unavailable during maintenance session. | Attach new storage storage, bring the system software up to date. |
+| Planned | Full Maintenance | 2022-02-21  0900 | 2022-03-16 1700 | Cirrus | There will be a full rebuild of the Cirrus Service. It will be unavailable during maintenance session. | Attach new storage storage, bring the system software up to date. |
 
 
 ## Maintenance Sessions:Quarter 4 2021 (1st Oct - 31st December 2021)
