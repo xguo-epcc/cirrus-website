@@ -10,6 +10,7 @@ summary: Up to date status of the Cirrus service
 - [Known Issues](#known-issues)
 - [Current Issues](#current-issues)
 - [Recent Issues](#recent-issues)
+- [Module Updates](#module-updates)
 - [Service Calendar and Maintenance](#service-calendar-and-maintenance)
 
 ## Wednesday 16th March: Cirrus Upgrade Status and Delayed Return to Service
@@ -90,7 +91,7 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 | Planned | Outage | 2021-12-01  0900 | 2021-12-01 1700 | Cirrus | Full system will be unavailable during maintenance session. | Third-party maintenance on cooling system. |
 | Completed | At-Risk | 2021-10-27 0900 | 2021-10-27 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
 
-## Regular Module Updates 
+## Module Updates 
 
 Module Update following Cirrus Upgrade March 2022 
   
@@ -119,22 +120,6 @@ Module Update following Cirrus Upgrade March 2022
 | Remove fftw/3.3.8-gcc8-ompi4 | Outdated | Please use the new build against MPT 2.25 |
 | Remove strace/2.2.0	| Old	| Use default strace/5.8 |
 
-
-On Wed 15 Dec 2021 we updating modules on Cirrus as detailed below.
-  
-| Description | Reason | Advice |
-| ---    | ---  | ---   | 
-| Default git loaded at login to be updated to 2.27 | There should be no adverse consequences for git users | 2.21 will still be available as a non-default version |
-| Remove starccm+/12.04 | Outdated | Please Use a later version |
-| Remove starccm+/12.04.011-R8 | Outdated | Please Use a later version |
-| Remove starccm+/13.06.012	| Outdated | Please Use a later version |
-| Remove starccm+/13.06.012-R8 | Outdated | Please Use a later version |
-| Remove starccm+/14.04.013-R8 | Outdated | Please Use a later version |
-| Remove starccm_/14.06.013-R8 | Outdated	| Please use a later version |
-| Remove gnu-parallel/20170322-gcc6	| Outdated	| Use later version |
-| Remove matlab/R2018b	| Outdated | Please use a later version |
-| Remove flacs/10.9.1	| Outdated | Please use a later version |
-| Remove strace/2.2.0	| Old	| Use default strace/5.8 |
 
 ## At Risk Maintenance Sessions
 
