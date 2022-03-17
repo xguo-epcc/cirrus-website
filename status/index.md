@@ -16,7 +16,7 @@ summary: Up to date status of the Cirrus service
 ## Thursday 17th March 1530: Return to Service
 
 The upgraded Cirrus service has now been returned to service.
-There are a reduced number of nodes available 220/280 CPU nodes while HPE continue to investigate an issue. We hope to return all nodes to service by next week.
+There are a reduced number of nodes available 220/280 CPU nodes while HPE continue to investigate an issue. We hope to return all nodes to service by next week. 
 
 Please contact support@cirrus.ac.uk if you have any questions or require assistance and apologies for any inconvenience caused by the delay to return to service.
 
