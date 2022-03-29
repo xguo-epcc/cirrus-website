@@ -8,8 +8,9 @@ summary: Up to date status of the Cirrus service
 
 - [Current System Load](#current-system-load)
 - [Known Issues](#known-issues)
-- [Current Issues](#current-issues)
-- [Recent Issues](#recent-issues)
+- [Current Issues](#service-alerts)
+- [Recent Issues](#recently-resolved-service-alerts)
+- [Maintenance](#service-calendar-and-maintenance)
 - [Module Updates](#module-updates)
 - [Service Calendar and Maintenance](#service-calendar-and-maintenance)
 
@@ -50,34 +51,186 @@ We are experiening a heavy load on the metadata server. Our systems team are inv
 
 ## Service Alerts
 
-| Status | Type | Start | End | System | User Impact | Reason |
-| ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Ongoing | Issue | 2021-07-01 0900 | tbc | Object Store (WoS) | The WoS is currently unavailable. | We are working with the hardware vendor to restore the WoS to service again. |   
 
-### Recently Resolved Service Alerts
+{% assign current_alerts = site.alerts | where_exp: "alert", "alert.status == 'Ongoing'" %}
+{% for alert in current_alerts reversed %}
+    {% if forloop.first == true %}
 
-| Status | Type | Start | End | System | User Impact | Reason |
-| ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Resolved | Issue | 2022-03-28 16:50 | 2022-03-28 16:53 | Cirrus | Users logged out of login node 1. | Login node 1 shut down due to operator error. Users can reconnect and will be automatically directed to other login nodes. | 
-| Resolved | Issue | 2022-01-09 10:00 | 2022-01-10 10:30 | Cirrus, SAFE | Outgoing network access from Cirrus to external sites was not working. SAFE response was slow or degraded. | DNS issue at datacentre |
-| Resolved | Issue | 2021-11-05 0800  | 2021-11-05 1130 | Cirrus: CPU compute nodes | A small number of CPU compute nodes were unavailable to run jobs | A power incident in the Edinburgh area caused a number of CPU compute nodes to lose power. |  
-| Resolved | Issue | 2021-10-28 1130  | 2021-10-28 1600 | Cirrus | Some external connections are unavailable such as git pull, pushes, licence servers | Network changes at the ACF have caused issues. The University network team have resolved the issues. |
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Type</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Scope</th>
+        <th>User Impact</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% endif %}
+      <tr>
+      <td>
+        {{ alert.status }}
+      </td>
+      <td>
+        {{ alert.type }}
+      </td>
+      <td>
+        {{ alert.start_date | date: "%Y-%m-%d %H:%M" }}
+      </td>
+      <td>
+        {{ alert.end_date | date: "%Y-%m-%d %H:%M" }}
+      </td>
+      <td>
+        {{ alert.scope }}
+      </td>
+      <td>
+        {{ alert.impact }}
+      </td>
+      <td>
+        {{ alert.reason }}
+      </td>
+     </tr>
+    {% if forloop.last == true %}
+    </tbody>
+  </table>
+
+    {% endif %}
+{% else %}
+<p>No current service alerts</p>
+{% endfor %}
+
+ 
+
+## Recently Resolved Service Alerts
+
+This table lists resolved service alerts from the past 30 days. 
+[A full list of historical resolved service alerts is available](history/alerts).
+
+{% assign resolved_alerts = site.alerts | where_exp: "alert", "alert.status == 'Resolved'" %}
+{% assign date_now = "now" | date: "%s" %}
+{% assign date_thresh = date_now | minus: 2592000 | date: "%s" %}
+{% assign count = 0 %}
+{% for alert in resolved_alerts reversed %}
+    {% assign ed = alert.end_date | date: "%s" %}
+    {% if ed > date_thresh %}
+        {% if count == 0 %}
+
+  <table >
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Type</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Scope</th>
+        <th>User Impact</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% endif %}
+      <tr>
+      <td>
+        {{ alert.status }}
+      </td>
+      <td>
+        {{ alert.type }}
+      </td>
+      <td>
+        {{ alert.start_date | date: "%Y-%m-%d %H:%M"  }}
+      </td>
+      <td>
+        {{ alert.end_date | date: "%Y-%m-%d %H:%M"  }}
+      </td>
+      <td>
+        {{ alert.scope }}
+      </td>
+      <td>
+        {{ alert.impact }}
+      </td>
+      <td>
+        {{ alert.reason }}
+      </td>
+      </tr>
+        {% assign count = count | plus: 1 %}
+    {% endif %}
+{% endfor %}
+{% if count > 0 %}
+    </tbody>
+  </table>
+{% else %}
+<p>No recent service alerts</p>
+{% endif %}
+
+
 
 ## Service Calendar and Maintenance
 
 ## Maintenance Sessions:Quarter 1 2022 (1st January - 31st March 2022)
 
-| Status | Type | Start | End | System | User Impact | Reason |
-| ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Planned | Full Maintenance | 2022-02-21  0900 | 2022-03-16 1700 | Cirrus | There will be a full rebuild of the Cirrus Service. It will be unavailable during maintenance session. | Attach new storage storage, bring the system software up to date. |
+{% assign maintenance_2022_q1 = site.maintenance | where_exp: "maintenance", "maintenance.quarter >= '2022_q1'" %}
+{% for maintenance in maintenance_2022_q1 reversed %}
+
+    {% if forloop.first == true %}
+### Quarter 1 2022 (1st January - 31st March 2022)
 
 
-## Maintenance Sessions:Quarter 4 2021 (1st Oct - 31st December 2021)
+  <table>
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Type</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>System</th>
+        <th>User Impact</th>
+        <th>Reason</th>
+      </tr>
+    </thead>
 
-| Status | Type | Start | End | System | User Impact | Reason |
-| ---    | ---  | ---   | --- | ---    | ---         | ---    |
-| Planned | Outage | 2021-12-01  0900 | 2021-12-01 1700 | Cirrus | Full system will be unavailable during maintenance session. | Third-party maintenance on cooling system. |
-| Completed | At-Risk | 2021-10-27 0900 | 2021-10-27 1700 | Cirrus | Period of up to 30mins when external connections are not possible. Compute nodes will continue to run jobs. | Network upgrade at the Advanced Computing Facility (ACF) |
+    <tbody>
+    {% endif %}
+      <tr>
+      <td>
+        {{ maintenance.status }}
+      </td>
+      <td>
+        {{ maintenance.type }}
+      </td>
+      <td>
+        {{ maintenance.start_date }}
+      </td>
+      <td>
+        {{ maintenance.end_date }}
+      </td>
+      <td>
+        {{ maintenance.system }}
+      </td>
+      <td>
+        {{ maintenance.impact }}
+      </td>
+      <td>
+        {{ maintenance.reason }}
+      </td>
+      </tr>
+    {% if forloop.last == true %}
+    </tbody>
+  </table>
+
+    {% endif %}
+{% else %}
+<p>No scheduled maintenance</p>
+{% endfor %}
+
+
+## Maintenance Logs for previous periods
+
+[Previous maintenance logs](history/maintenance)
+
+
 
 ## Module Updates 
 
