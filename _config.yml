@@ -1,4 +1,3 @@
-
 exclude:
   - "/vendor/"
   - "Gemfile"
@@ -34,3 +33,9 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+collections:
+  alerts:
+    output: false
+  maintenance:
+    output: false
