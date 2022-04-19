@@ -14,14 +14,9 @@ summary: Up to date status of the Cirrus service
 - [Module Updates](#module-updates)
 - [Service Calendar and Maintenance](#service-calendar-and-maintenance)
 
-## Thursday 17th March 1530: Return to Service
+## Thursday 14th April: Full Return to Service
 
-The upgraded Cirrus service has now been returned to service.
-There are a reduced number of nodes available 220/280 CPU nodes while HPE continue to investigate an issue. We hope to return all nodes to service by next week. 
-
-The management system software was updated as well as the operating system on the compute and login nodes. There is a new CEPH /home file system available and we hope to have the new /work file system available in the summer. 
-
-Please contact support@cirrus.ac.uk if you have any questions or require assistance and apologies for any inconvenience caused by the delay to return to service.
+All nodes have now been returned to user service. 
 
 ## Current System Load
 
