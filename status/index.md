@@ -14,10 +14,6 @@ summary: Up to date status of the Cirrus service
 - [Module Updates](#module-updates)
 - [Service Calendar and Maintenance](#service-calendar-and-maintenance)
 
-## Thursday 14th April: Full Return to Service
-
-All nodes have now been returned to user service. 
-
 ## Current System Load
 
 The plot below shows the status of the CPU nodes on the current Cirrus service for the past day
